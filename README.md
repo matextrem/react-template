@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Node version
+10.14.0
 
+## Usage
+1. git clone git@github.com:matextrem/react-template.git && cd react-template
+2. `npm i &&
+ npm run start
+`
 ## Available Scripts
 
 In the project directory, you can run:
