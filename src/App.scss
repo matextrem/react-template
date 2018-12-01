@@ -1,7 +1,48 @@
 .App {
+  .main-container{
+    height: 100px;
+  }
   .menu-icons{
     position: relative;
-    bottom:60px;
+    bottom:80px;
+    margin-right: 20px;
+    float: right;
+    svg{
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .user-dropdown{
+      button{
+        background: transparent;
+        position: relative;
+        top: -9px;
+        border: 0;
+        outline: none;
+        color: gray;
+        &:focus{
+          box-shadow:none;
+        }
+        .dropdown{
+          border: 1px solid;
+        }
+      }
+      .custom-menu{
+        left: -18px !important;
+      }
+    }
+    .dropdown{
+      display: inline-block;
+      padding: 10px;
+      height: 40px;
+      border-radius: 100%;
+      span{
+        position: relative;
+        top:-4px;
+      }
+    }
+    .angle-down{
+      margin-left: 5px;
+    }
   }
   .breadcrumb{
     ol{
@@ -17,5 +58,11 @@
         color:blue;
       }
     }
+  }
+}
+
+@media screen and (max-width: 996px){
+  .menu-icons{
+    display:none;
   }
 }

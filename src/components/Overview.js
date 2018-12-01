@@ -1,6 +1,10 @@
 import React from 'react';
 import { Card, CardHeader, Row, Col, Table } from 'reactstrap';
 import './Overview.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faCheck,
+} from '@fortawesome/free-solid-svg-icons';
 
 class Overview extends React.Component {
   render() {
@@ -15,7 +19,7 @@ class Overview extends React.Component {
                   <tbody>
                     <tr>
                       <td>Status</td>
-                      <td className="text-right status">Active</td>
+                      <td className="text-right status"><FontAwesomeIcon icon={faCheck} /> Active </td>
                     </tr>
                     <tr>
                       <td>Method</td>
@@ -45,10 +49,8 @@ class Overview extends React.Component {
                       <td>Service Options</td>
                       <td className="text-right">
                         Deconsolidation. Customs Clearance,
-                        <br />
                       </td>
                     </tr>
-                    <br/>
                     <tr>
                       <td>Hazardous or forbidden commodities</td>
                       <td className="text-right">
