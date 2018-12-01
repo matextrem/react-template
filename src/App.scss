@@ -1,0 +1,21 @@
+.App {
+  .menu-icons{
+    position: relative;
+    bottom:60px;
+  }
+  .breadcrumb{
+    ol{
+      margin:0;
+    }
+    .item{
+      cursor: pointer;
+      margin-right: 15px;
+      &:before{
+        display: none;
+      }
+      &:hover{
+        color:blue;
+      }
+    }
+  }
+}

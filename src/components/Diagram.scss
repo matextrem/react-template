@@ -1,7 +1,14 @@
 .diagram-container{
+  .header{
+    text-align: center;
+    font-weight: bold;
+  }
   margin:20px;
   .item{
     padding:20px;
     padding-left:35px;
+  }
+  .diagram-image{
+    width: 100%;
   }
 }

@@ -1,14 +1,31 @@
 import React from 'react';
-import { Card, CardHeader, Row, Col, Table } from 'reactstrap';
+import { Card, CardHeader, Row, Col, Table, Tooltip } from 'reactstrap';
 import './Invoice.scss';
 
 class Invoice extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      tooltipOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      tooltipOpen: !this.state.tooltipOpen
+    });
+  }
+
   render() {
     return (
       <div className="invoice-container">
-        <div />
         <h3>
-          Invoice <span className="subtitle">SO3834754</span>
+          Invoice <span id="TooltipExample" className="subtitle">SO3834754</span>
+          <Tooltip placement="top" isOpen={this.state.tooltipOpen} target="TooltipExample" toggle={this.toggle}>
+          Invoice number
+        </Tooltip>
         </h3>
         <Card>
           <CardHeader className="header">Invoice - Revision</CardHeader>
