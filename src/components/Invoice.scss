@@ -1,0 +1,42 @@
+.invoice-container{
+  .subtitle{
+    font-size: 16px;
+    vertical-align: middle;
+    color: gray;
+  }
+  .table{
+    td:nth-child(2) {
+      font-weight: bold;
+    }
+  }
+  .header{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  margin:20px;
+  .item{
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    padding:20px;
+    padding-left:35px;
+  }
+  .row{
+    .item:last-child{
+      border-right: 0;
+    }
+  }
+  .bill-details{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .product-details{
+    font-weight: bold;
+
+    .title{
+      font-size: 18;
+    }
+    .price{
+      font-size: 24px;
+      color:orange;
+    }
+  }
+}
